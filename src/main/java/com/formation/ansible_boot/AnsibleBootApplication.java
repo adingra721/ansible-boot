@@ -17,7 +17,7 @@ public class AnsibleBootApplication {
 	
 	@GetMapping(value = "hello")
 	public String hello() {
-		return "<h2> Bonjour spring v2  </h2>" ;
+		return "<h2> Bonjour spring v2 branch dev  </h2>" ;
 	}
 
 	

@@ -24,7 +24,6 @@ pipeline {
             }
         }
         stage('Deploy Image') {
-            when { expression { false } }
             steps{
                sh 'docker stop ansible-demo || true'
                sh 'docker rm ansible-demo || true'

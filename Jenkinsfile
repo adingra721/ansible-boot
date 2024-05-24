@@ -2,15 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Connect to git') {
-            steps{
-                git(
-                    url : "https://github.com/adingra721/ansible-boot.git",
-                    branch: "main"
-                    )
-            }
-            
-        }
          stage('Build artifact') {
             steps{
                sh 'mvn clean package -DskipTest=true'
